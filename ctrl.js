@@ -72,7 +72,9 @@ const getContacts = async (req, res) => {
         address2: contact.address2,
         city: contact.city,
         state: contact.state,
-        zip: contact.zip
+        zip: contact.zip,
+        createdAt: contact.created_at,
+        updatedAt: contact.updated_at
       }))
     );
   } catch (error) {
